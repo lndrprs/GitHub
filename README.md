@@ -49,12 +49,13 @@ G1.1 - Git e GitHub
  >     - Normalmente, um ramo para uma nova função se chama "Topic Branch";
  >     - Quando o desenvolvimento está completo no Topic Branch, é possível fundir com a Master Branch;
  >   - A ideia de ramificações permite desenvolver recursos simultaneamente. 
- > - Obs.: Master Branch e Main Branch é a mesma coisa. "main branch" é o padrão do GitHub. 
+ > - Obs.: Master Branch e Main Branch são a mesma coisa. "main branch" é o padrão do GitHub. 
  >
  > - Commandos 
 
 ```
-# Editar e Comitar 
+# Editar e Comitar
+git init - Cria um repositório local 
 git add - Adiciona alterações para a área de Stage
 git status - Estado atual do repositório
 git commit - Commit das alterações que estão no Stage
@@ -77,8 +78,6 @@ git remote - Gerencia repositórios remotos
 git push - Envia commits locais para o repositório remoto
 git pull - Baixa alterações do repositório e aplica merge automaticamente 
 git fetch - Baixa alterações do repositório remoto sem aplicar merge  
-
-
 
 ```
 
