@@ -80,6 +80,15 @@ git pull - Baixa alterações do repositório e aplica merge automaticamente
 git fetch - Baixa alterações do repositório remoto sem aplicar merge  
 
 ```
+ >- Arquitetura de Três Níveis
+ >   - Git usa a arquitetura de três níveis:
+ >     - Working Directory: Edição dos arquivos em desenvolvimento;
+ >     - Staging Area: Area de preparação para comitar;
+ >     - Local Repository: Armazenamento nos arquivos comitados. 
+ > 
+ > - Head e Index 
+ >   - O último commit se chama HEAD;
+ >   - A área de preparação (staging), se chama Index. 
 
 </br>
 </div>
