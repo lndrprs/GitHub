@@ -135,7 +135,7 @@ G2.4 - Dependabot
  > - Ferramenta de Gerenciamento Automatizado de Dependências;
  >   - Mantém as dependências sempre atualizadas;
  >   - Verifica regularmente atualizações em bibliotecas e frameworks usados no projeto;
- >   - Além disso, também abre Pull Requests automaticamente, atualizando dependências e mantendo a segurança delas;
+ >   - Além disso, também abre Pull Requests automaticamente, atualizando dependências e mantendo a segurança delas.
  >
  > - Dependabot possui:
  >   - Alertas para vulnerabilidades conhecidas;
@@ -143,7 +143,7 @@ G2.4 - Dependabot
  >   - Atualizações de versão, para manter as dependênciais atuais. 
  >
  > - Dependabot trabalha junto com o Dependency Graph;
- >   - Determinando quais dependências estão em uso, e as referenciar no GitHub Advisory Database para detectar vulnerabilidades; 
+ >   - Determinando quais dependências estão em uso, e as referenciar no GitHub Advisory Database para detectar vulnerabilidades. 
  >
  > - Com o GHAS, Dependabot possui Dependency Review;
  >   - Permite prever pacotes vulneráveis no Pull Request, antes do merging. 
@@ -151,10 +151,19 @@ G2.4 - Dependabot
 G2.5 - Dependency Graphy 
  > - Identifica todas as dependências de um repositório ou pacote; 
  >   - Permite visualizar as dependências e algumas informações, como vulnerabilidade, no Dependendy Graph para o repositório; 
- >   - Para gerar o gráfico, GitHub analisa as dependências explícitas declaradas no Manifest e Lockfiles; 
- >   - Quando ativo, o Dependency Graph automaticamente analisa os pacotes no manifesto, e usa isso para construir o gráfico com os nomes e versões; 
+ >   - Para gerar o gráfico, GitHub analisa as dependências explícitas declaradas no arquivo Manifest e Lock ; 
+ >   - Quando ativo, o Dependency Graph automaticamente analisa os pacotes no manifesto, e usa isso para construir o gráfico com os nomes e versões.
  >
  > - Pontos-chave:
+ >   - Inclui informação nas dependências diretas e transitivas;
+ >   - Automaticamente atualizado, quando commita mudanças ou adiciona manifesto / lock;
+ >   - Para ver o gráfico, é só abrir o repositório e ir na aba "Insights";
+ >   - Com o acesso de Leitura ao repositório, é possível exportar o gráfico como SPDX. 
+ >
+ > - É possível usar a API de Submissão de Dependency para analisar manifest ou arquivo lock;
+ >
+ > - Outras características do GitHub dependem do Dependency Graph, como:
+ >   - Dependency Review: Para identificar mudanças em dependências, e entender o impacto na segurança, durante a revisão de PR;
  >   - 
 
 </br>
