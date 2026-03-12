@@ -148,7 +148,14 @@ G2.4 - Dependabot
  > - Com o GHAS, Dependabot possui Dependency Review;
  >   - Permite prever pacotes vulneráveis no Pull Request, antes do merging. 
 
-
+G2.5 - Dependency Graphy 
+ > - Identifica todas as dependências de um repositório ou pacote; 
+ >   - Permite visualizar as dependências e algumas informações, como vulnerabilidade, no Dependendy Graph para o repositório; 
+ >   - Para gerar o gráfico, GitHub analisa as dependências explícitas declaradas no Manifest e Lockfiles; 
+ >   - Quando ativo, o Dependency Graph automaticamente analisa os pacotes no manifesto, e usa isso para construir o gráfico com os nomes e versões; 
+ >
+ > - Pontos-chave:
+ >   - 
 
 </br>
 </div>
