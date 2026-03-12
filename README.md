@@ -102,15 +102,52 @@ git fetch - Baixa alterações do repositório remoto sem aplicar merge
 <br>  
 
 G2.1 - GitHub Advanced Security (GHAS) 
- - Solução para segurança de aplicação;
-   - Inclui capacidades ofertadas em dois produtos distintos:
-     - GitHub Secret Protection; 
-     - GitHub Code Security. 
- - Advanced Security é integrado no fluxo de trabalho, prevenindo vulnerabilidades e vazamento de credenciais; 
- - Existem 3 características do GHAS: 
-   - Secret Scanning;
-   - Code Scanning;
-   - Dependabot. 
+ > - Solução para segurança de aplicação;
+ >   - Inclui capacidades ofertadas em dois produtos distintos:
+ >     - GitHub Secret Protection; 
+ >     - GitHub Code Security. 
+ > - Advanced Security é integrado no fluxo de trabalho, prevenindo vulnerabilidades e vazamento de credenciais; 
+ > - Existem 3 características do GHAS - que são ativados na aba "Security": 
+ >   - Secret Scanning;
+ >   - Code Scanning;
+ >   - Dependabot. 
+
+G2.2 - Secret Scanning 
+ > - Identifica e ajuda a prevenir exposição acidental de informações sensíveis - como Chaves de API e Tokens, dentro do código; 
+ > - Disponível para todos os repositórios públicos, de forma gratuita;
+ > - Para repositórios privados, precisa ter uma licença GHAS. 
+ >
+ > - Procura por padrões predefinidos e sinais indicativos de informações sensíveis;
+ > - Por padrão, os padrões são providenciados por um GitHub Partner, mas é possível criar padrões customizáveis. 
+ >
+ > - Secret Scanning inclui:
+ >   - Push Protection: Previne vazamento de segredos escaneando o código no commit, e bloqueando o push;
+ >   - Visão de alertas e remediações sem precisar sair do GitHub. 
+ >
+
+G2.3 - Code Scanning 
+ > - Analiza o código por vulnerabilidades e erros; 
+ >   - Usa SAT (Static Analysis Techniques), para vulnerabilidades como SQL Injection, SSX e Buffer Overflows; 
+ >   - Providencia feedback automatizado diretamente no fluxo de Pull Request;
+ >   - Pode também detectar vulnerabilidades que já existem em Produção. 
+
+G2.4 - Dependabot 
+ > - Ferramenta de Gerenciamento Automatizado de Dependências;
+ >   - Mantém as dependências sempre atualizadas;
+ >   - Verifica regularmente atualizações em bibliotecas e frameworks usados no projeto;
+ >   - Além disso, também abre Pull Requests automaticamente, atualizando dependências e mantendo a segurança delas;
+ >
+ > - Dependabot possui:
+ >   - Alertas para vulnerabilidades conhecidas;
+ >   - Atualizações de segurança para pacotes vulneráveis;
+ >   - Atualizações de versão, para manter as dependênciais atuais. 
+ >
+ > - Dependabot trabalha junto com o Dependency Graph;
+ >   - Determinando quais dependências estão em uso, e as referenciar no GitHub Advisory Database para detectar vulnerabilidades; 
+ >
+ > - Com o GHAS, Dependabot possui Dependency Review;
+ >   - Permite prever pacotes vulneráveis no Pull Request, antes do merging. 
+
 
 
 </br>
