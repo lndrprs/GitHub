@@ -97,10 +97,20 @@ git fetch - Baixa alterações do repositório remoto sem aplicar merge
 ----
 
 <details>
-  <summary><b> 2. GitHub Advanced Security </b></summary>
+  <summary><b> 2. GitHub Advanced Security (GHAS) </b></summary>
 <div align="Left">  
 <br>  
 
+G2.1 - GitHub Advanced Security (GHAS) 
+ - Solução para segurança de aplicação;
+   - Inclui capacidades ofertadas em dois produtos distintos:
+     - GitHub Secret Protection; 
+     - GitHub Code Security. 
+ - Advanced Security é integrado no fluxo de trabalho, prevenindo vulnerabilidades e vazamento de credenciais; 
+ - Existem 3 características do GHAS: 
+   - Secret Scanning;
+   - Code Scanning;
+   - Dependabot. 
 
 
 </br>
