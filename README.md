@@ -148,7 +148,7 @@ G2.4 - Dependabot
  > - Com o GHAS, Dependabot possui Dependency Review;
  >   - Permite prever pacotes vulneráveis no Pull Request, antes do merging. 
 
-G2.5 - Dependency Graphy 
+G2.5 - Dependency Graph
  > - Identifica todas as dependências de um repositório ou pacote; 
  >   - Permite visualizar as dependências e algumas informações, como vulnerabilidade, no Dependendy Graph para o repositório; 
  >   - Para gerar o gráfico, GitHub analisa as dependências explícitas declaradas no arquivo Manifest e Lock ; 
@@ -164,7 +164,34 @@ G2.5 - Dependency Graphy
  >
  > - Outras características do GitHub dependem do Dependency Graph, como:
  >   - Dependency Review: Para identificar mudanças em dependências, e entender o impacto na segurança, durante a revisão de PR;
- >   - 
+ >   - Dependabot Alerts: Dependabot faz uma referência cruzada nos dados da dependência, com o GitHub Advisory Database;
+ >     - O Dependency Graph escaneia as dependências e gera alertas no Dependabot, quando há vulnerabilidade. 
+ >   - Dependabot Security Updates: Usa o Dependency Graph e Dependabot Alerts, para ajudar na atualização de dependências com vulnerabilidades. 
+ >
+ > - Dependabot Version Updates não usa o Dependency Graph, esse depende do Versionamento de Semântica das dependências;
+ >   - Version Updates ajuda a manter as dependências atualizadas, mesmo quando não possuem vulnerabilidades. 
+
+G2.6 - GHAS Alerts 
+ > - Code Scanning Alerts
+ >   - CodeQL Analysis Alerts: Gerado por CodeQL, mecanismo de análise semântica de código;
+ >   - Identificam vulnerabilidades de segurança no código (Como SQL Injection, SSX, etc.)
+ >
+ > - Secret Scanning Alerts
+ >   - Exposed Secrets  Alerts: Alertas ativados quando informações sensíveis - como chaves API ou Credenciais -, são identificadas num repositório.
+ >
+ > - Dependency Alerts 
+ >   - Dependabot Alerts: Automaticamente detecta dependências desatualizadas e cria pull requests para atualizá-las para a última / segura versão.
+ >
+ > - Security Overview Alerts 
+ >   - Providencia um dashboard resumindo o estado de segurando de um repositório.   
+ >
+ > - Third Party Alerts
+ >   - Possibilidade de integrar ferramentas de análise de código no GitHub, fazendo o upload dos arquivos SARIF. 
+ >
+ > - Access to Alerts
+ >   - Code Scanning e Dependabot Alerts: Qualquer um com permissão de Write no repositório;
+ >   - Secret Scanning: Apenas Admins do repositório;
+ >   - Qualquer pessoa ou time pode ter acesso para ver e modificar os alertas no repositório, ajustando em "Access to Alerts". 
 
 </br>
 </div>
