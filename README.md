@@ -170,6 +170,22 @@ G2.5 - Dependency Graph
  >
  > - Dependabot Version Updates não usa o Dependency Graph, esse depende do Versionamento de Semântica das dependências;
  >   - Version Updates ajuda a manter as dependências atualizadas, mesmo quando não possuem vulnerabilidades. 
+ >
+ > - Dependency Graph é um resumo de arquivos Manifest e Lock, armazenados no repositório e em qualquer dependência submetidas ao repositório usando a API de Submissão;
+ >   - Esses arquivos contém metadado sobre o projeto;
+ >   - O Dependency Graph é automaticamente gerado para repositórios públicos, e incluem:
+ >     - Dependencies: Ecosistema e pacotes no qual o repositório depende; 
+ >     - Dependents: Repositórios e Pacotes que dependem do repositório. 
+ >
+ > - Existem dois tipos de Dependências:
+ >   - Diretas: Explicitamente definidas nos arquivos Lock e Manifesto, ou submetidas com a API de DS (Dependency Submission)
+ >   - Indiretas / Transitivas / Subdependências: Dependências usadas por pacotes que são dependências do projeto. 
+ >
+ > - Arquivos Lock geram o gráfico de dependência mais confiável;
+ >   - Isso porque definem quais versões das dependências diretas e indiretas o rpojeto usa. 
+ >
+ > - Para repositórios privados, precisa ativar o gráfico de dependências. 
+ https://learn.microsoft.com/en-us/training/modules/configure-dependabot-security-updates-on-github-repo/2-manage-your-dependencies-github
 
 G2.6 - GHAS Alerts 
  > - Code Scanning Alerts
