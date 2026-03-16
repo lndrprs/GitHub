@@ -182,10 +182,10 @@ G2.5 - Dependency Graph
  >   - Indiretas / Transitivas / Subdependências: Dependências usadas por pacotes que são dependências do projeto. 
  >
  > - Arquivos Lock geram o gráfico de dependência mais confiável;
- >   - Isso porque definem quais versões das dependências diretas e indiretas o rpojeto usa. 
+ >   - Isso porque definem quais versões das dependências diretas e indiretas o projeto usa. 
  >
  > - Para repositórios privados, precisa ativar o gráfico de dependências. 
- https://learn.microsoft.com/en-us/training/modules/configure-dependabot-security-updates-on-github-repo/2-manage-your-dependencies-github
+
 
 G2.6 - GHAS Alerts 
  > - Code Scanning Alerts
@@ -208,6 +208,45 @@ G2.6 - GHAS Alerts
  >   - Code Scanning e Dependabot Alerts: Qualquer um com permissão de Write no repositório;
  >   - Secret Scanning: Apenas Admins do repositório;
  >   - Qualquer pessoa ou time pode ter acesso para ver e modificar os alertas no repositório, ajustando em "Access to Alerts". 
+
+G2.7 - GitHub Advisory Database
+ > - Banco de dados de vulnerabilidades de segurança;
+ > - Inclusivo de CVE's e Security Advisories do GitHub, do Open Source; 
+ > - GitHub coleta informação nas vulnerabilidades, e inclui no Adv. Database:
+ >   - Repositório de  Avisos de Segurança Open Source, e gratuito;
+ >   - Permite a comunidade colaborar nos avisos;
+ >   - Formato padrão aceito pela industria; 
+ >
+ > - Advisory Database contém informações de cada vulnerabilidade;
+ >   - Incluindo Descrição, Severidade, e pacote afetado;
+ >   - O banco de dados usa o CVSS - Common Vulnerability Scoring System para atribuir Severidade; 
+ >   - Graus de severidade: Low, Medium, High e Critical; 
+ > 
+ > - O Banco de Dados é populado pelas seguintes fontes:
+ >   - Security Advisories Reported on GitHub; 
+ >   - National Vulnerability Database;
+ >   - NPM Security Advisories Database;
+ >   - FriendsOfPHP Database;
+ >   - Go Vulncheck Database;
+ >   - Python Packaging Advisory Database;
+ >   - Ruby Advisory Database;
+ >   - RustSec Advisory Database;
+ >   - Community Contributions;
+ >   - Combination of Machine Learning and Human Reviews in Public Commit on GitHub. 
+
+G2.8 - Software Bill of Materials (SBOM)
+ > - Inventório de dependências de um projeto e informações associadas, como:
+ >   - Versão, identificadores de pacote, e licenças;
+ > - SBOMs ajuda a reduzir os riscos de Supply Chain, por:
+ >   - Prover transparência sobre dependências usadas no repositório;
+ >   - Identificar vulnerabilidades antecipadamente;
+ >   - Prover percepções sobre qualidade, segurança e compliance; 
+ >   - Ajuda em cumprir padrões de proteção de dados.
+ >
+ > - GitHub fornece duas formas de exportar o SBOM para o repositório:
+ >   - GitHub UI;
+ >   - REST API;
+ > - Também é possível exportar o gráfico de dependências como SBOM, usando o SPDX: Software Package Data Exchange 
 
 </br>
 </div>
