@@ -147,6 +147,33 @@ G2.4 - Dependabot
  >
  > - Com o GHAS, Dependabot possui Dependency Review;
  >   - Permite prever pacotes vulneráveis no Pull Request, antes do merging. 
+ >
+ > - Dependabot mantém as dependências atualizadas, informando sobre vulnerabilidades nas dependências; 
+ >   - Quando um alerta é ativado, automaticamente abre um pR para atualizar as dependências;
+ >     - Seja para a próxima versão segura ou para a última versão.
+ > 
+ > - Alertas são gerados quando: 
+ >   - Um novo Advisory é adicionado no GitHub Advisory Database;
+ >   - O gráfico de dependência por um repositório, muda.
+ >
+ > - Arquivos Manifesto e Lock são importantes, precisam ficar atualizados.
+ >
+ > - Dependabot usa Read-Only Analysis nos repositórios em que é ativado; 
+ >   - Precisa ativar tanto o Dependabot, como também o Dependency Graph. 
+ > - O Usuário precisa ter permissão de Write, Maintain ou Admin. 
+ >
+ > - Os alertas do Dependabot possuem:
+ >   - Classificação e Pontuação de Severidade; 
+ >   - Métricas Base de CVSS; 
+ >   - CWE; 
+ >   - CVE ID;
+ >   - GHSA ID.
+ >
+ > - Atualizações do Dependabot:
+ >   - Security Updates: PRs que ajudam a atualizar dependências inseguras;
+ >   - Version Updates: PRs que matém as dependências atualizadas, mesmo sem inseguranças.
+
+ https://learn.microsoft.com/en-us/training/modules/configure-dependabot-security-updates-on-github-repo/4-dependabot-security-updates
 
 G2.5 - Dependency Graph
  > - Identifica todas as dependências de um repositório ou pacote; 
@@ -185,7 +212,6 @@ G2.5 - Dependency Graph
  >   - Isso porque definem quais versões das dependências diretas e indiretas o projeto usa. 
  >
  > - Para repositórios privados, precisa ativar o gráfico de dependências. 
-
 
 G2.6 - GHAS Alerts 
  > - Code Scanning Alerts
@@ -247,6 +273,16 @@ G2.8 - Software Bill of Materials (SBOM)
  >   - GitHub UI;
  >   - REST API;
  > - Também é possível exportar o gráfico de dependências como SBOM, usando o SPDX: Software Package Data Exchange 
+
+G2.9 - Dependency Review
+ > - Verificação de Vulnerabilidades em Dependências antes de serem adicionados na main branch; 
+ > - Ajuda a entender mudanças na dependência, e o impacto na segurança, dessas mudanças; 
+ > - Fácil visualização das diferenças em "Files Changed", no PR;
+ > - Informa sobre: 
+ >   - Dependências adicionadas, removidas ou atualizadas; 
+ >   - Número de projetos que usam esses componentes;
+ >   - Dados das vulnerabilidades dessas dependências. 
+ > - A diferença entre o Review e o Bot, é que o Bot é automaticamente, e o Review é no PR. 
 
 </br>
 </div>
