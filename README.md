@@ -124,6 +124,31 @@ G2.2 - Secret Scanning
  >   - Push Protection: Previne vazamento de segredos escaneando o código no commit, e bloqueando o push;
  >   - Visão de alertas e remediações sem precisar sair do GitHub. 
  >
+ > - Automaticamente escaneia todo o histórico do Git, em todas as branches do repositório;
+ >   - Lembrando que o Secret Scanning procura por credenciais de autenticação; 
+ >   - O Escâner procura:
+ >     - Descrições e Comentários em Issues;
+ >     - Títulos, descrições e comentários, em issues abertos ou fechados;
+ >     - Títulos, descrições e comentários em PRs; 
+ >     - Títulos, descrições e comentários em Discussões. 
+ >    - Quando algum segredo é identificado, envia uma notificação a todos os administradores sobre o commit; 
+ >    - Para ver o alerta, entrar na aba "Security";
+ >    - GitHub também notifica o provedor de serviço, se tiver parceria com o GitHub. 
+ > 
+ > - Push Protection
+ >   - Previne Pushes que contenham segredos detectados no código; 
+ >   - Contribuidores são solicitados diretamente no IDE ou CLI para remediar a exposição; 
+ >   - Para proceder, contribuidores devem remover o segredo, ou permitir. 
+ > - É automaticamente ativo em projetos públicos; 
+ > - Para repositórios privados, precisa ser ativado manualmente - e possuir o GHAS. 
+ >
+ > - Validity Checks 
+ >   - Determina se um token ainda é ativo, e quando foi ativo. 
+ >
+ > - Para evitar que determinados arquivos sejam escaneados, criar um arquivo secret_scanning.yml;
+ >   - Nesse arquivo, usar o "paths-ignore". 
+ > - O Secret Scanning exclue os primeiros 1.000 diretórios dos escaneamentos, se tiver mais de 1.000 registros; 
+ > - Se for maior que 1 MB, vai ignorar o arquivo todo. 
 
 G2.3 - Code Scanning 
  > - Analiza o código por vulnerabilidades e erros; 
