@@ -172,8 +172,18 @@ G2.4 - Dependabot
  > - Atualizações do Dependabot:
  >   - Security Updates: PRs que ajudam a atualizar dependências inseguras;
  >   - Version Updates: PRs que matém as dependências atualizadas, mesmo sem inseguranças.
+ >
+ > - Há um arquivo: dependabot.yml, que fica no diretório .github;
+ >   - Usuários com permissão de Write, podem permitir o version updates; 
+ >   - Esse arquivo possui:
+ >     - version: Deve ser a versão 2;
+ >     - registries: Opcional - dependência em um registro privado, aqui se colocam as autenticações;
+ >     - updates: Inclui uma entrada para cada dependência que o Dependabot monitorará. 
+ > - Para cara gerenciador de pacote, há:
+ >   - package-ecosystem: identifica o gerenciador de pacote;
+ >   - directory: Especifica o local do manifesto ou outros arquivos de definição;
+ >   - schedule.interval: Especifica quão frequente se deve verificar por novas versões. 
 
- https://learn.microsoft.com/en-us/training/modules/configure-dependabot-security-updates-on-github-repo/4-dependabot-security-updates
 
 G2.5 - Dependency Graph
  > - Identifica todas as dependências de um repositório ou pacote; 
@@ -282,7 +292,11 @@ G2.9 - Dependency Review
  >   - Dependências adicionadas, removidas ou atualizadas; 
  >   - Número de projetos que usam esses componentes;
  >   - Dados das vulnerabilidades dessas dependências. 
- > - A diferença entre o Review e o Bot, é que o Bot é automaticamente, e o Review é no PR. 
+ > - A diferença entre o Review e o Bot, é que o Bot é automaticamente, e o Review é no PR.
+
+G2.10 - GraphQL Explorer 
+ > - Ferramenta recomendada para se comunicar com o GraphQL API; 
+ > - É um IDE interativo e gráfico, de GraphQL.   
 
 </br>
 </div>
