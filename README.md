@@ -149,6 +149,25 @@ G2.2 - Secret Scanning
  >   - Nesse arquivo, usar o "paths-ignore". 
  > - O Secret Scanning exclue os primeiros 1.000 diretórios dos escaneamentos, se tiver mais de 1.000 registros; 
  > - Se for maior que 1 MB, vai ignorar o arquivo todo. 
+ >
+ > - Depois de ativar o Secret Scanning, existem mais configurações para afinar a detecção:
+ >   - Validity Check: Verifica se os segredos expostos ainda estão ativos;
+ >   - Non-Provider Patterns: Escaneia por formatos fora do padrão;
+ >   - Scan for Generic Passwords: IA detecta senhas genéricas ou fracas nos códigos;
+ >   - Push Protection: Bloqueia commits contendo tipos de segredos. 
+ > - Há outras possibilidades, como:
+ >   - Regras de Bypass: Permite que cargos ou times ignorem a proteção;
+ >   - Alert Dismissal Rules: Requisita justificativa antes de liberar os alertas;
+ >   - Custom Patterns: Definir até 100 padrões customizáveis, para detecção de segredos. 
+ >
+ > - Existem 4 razões para fechamento de um alerta:
+ >   - Revogado;
+ >   - Usado em Testes;
+ >   - Falso Positivo;
+ >   - Não será arrumado. 
+ >
+ > - Secret Scanning suporta até 500 padrões customizados para cada organização ou empresa; 
+ > - Até 100 para repositórios privados. 
 
 G2.3 - Code Scanning 
  > - Analiza o código por vulnerabilidades e erros; 
@@ -208,7 +227,6 @@ G2.4 - Dependabot
  >   - package-ecosystem: identifica o gerenciador de pacote;
  >   - directory: Especifica o local do manifesto ou outros arquivos de definição;
  >   - schedule.interval: Especifica quão frequente se deve verificar por novas versões. 
-
 
 G2.5 - Dependency Graph
  > - Identifica todas as dependências de um repositório ou pacote; 
@@ -322,6 +340,9 @@ G2.9 - Dependency Review
 G2.10 - GraphQL Explorer 
  > - Ferramenta recomendada para se comunicar com o GraphQL API; 
  > - É um IDE interativo e gráfico, de GraphQL.   
+
+
+https://learn.microsoft.com/en-us/training/modules/configure-code-scanning/
 
 </br>
 </div>
