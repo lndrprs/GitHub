@@ -112,6 +112,7 @@ G2.1 - GitHub Advanced Security (GHAS)
  >   - Code Scanning;
  >   - Dependabot. 
 
+
 G2.2 - Secret Scanning 
  > - Identifica e ajuda a prevenir exposição acidental de informações sensíveis - como Chaves de API e Tokens, dentro do código; 
  > - Disponível para todos os repositórios públicos, de forma gratuita;
@@ -168,6 +169,7 @@ G2.2 - Secret Scanning
  >
  > - Secret Scanning suporta até 500 padrões customizados para cada organização ou empresa; 
  > - Até 100 para repositórios privados. 
+
 
 G2.3 - Code Scanning 
  > - Analiza o código por vulnerabilidades e erros; 
@@ -253,6 +255,7 @@ G2.4 - Dependabot
  >   - directory: Especifica o local do manifesto ou outros arquivos de definição;
  >   - schedule.interval: Especifica quão frequente se deve verificar por novas versões. 
 
+
 G2.5 - Dependency Graph
  > - Identifica todas as dependências de um repositório ou pacote; 
  >   - Permite visualizar as dependências e algumas informações, como vulnerabilidade, no Dependendy Graph para o repositório; 
@@ -291,6 +294,7 @@ G2.5 - Dependency Graph
  >
  > - Para repositórios privados, precisa ativar o gráfico de dependências. 
 
+
 G2.6 - GHAS Alerts 
  > - Code Scanning Alerts
  >   - CodeQL Analysis Alerts: Gerado por CodeQL, mecanismo de análise semântica de código;
@@ -312,6 +316,7 @@ G2.6 - GHAS Alerts
  >   - Code Scanning e Dependabot Alerts: Qualquer um com permissão de Write no repositório;
  >   - Secret Scanning: Apenas Admins do repositório;
  >   - Qualquer pessoa ou time pode ter acesso para ver e modificar os alertas no repositório, ajustando em "Access to Alerts". 
+
 
 G2.7 - GitHub Advisory Database
  > - Banco de dados de vulnerabilidades de segurança;
@@ -338,6 +343,7 @@ G2.7 - GitHub Advisory Database
  >   - Community Contributions;
  >   - Combination of Machine Learning and Human Reviews in Public Commit on GitHub. 
 
+
 G2.8 - Software Bill of Materials (SBOM)
  > - Inventório de dependências de um projeto e informações associadas, como:
  >   - Versão, identificadores de pacote, e licenças;
@@ -352,6 +358,7 @@ G2.8 - Software Bill of Materials (SBOM)
  >   - REST API;
  > - Também é possível exportar o gráfico de dependências como SBOM, usando o SPDX: Software Package Data Exchange 
 
+
 G2.9 - Dependency Review
  > - Verificação de Vulnerabilidades em Dependências antes de serem adicionados na main branch; 
  > - Ajuda a entender mudanças na dependência, e o impacto na segurança, dessas mudanças; 
@@ -362,6 +369,7 @@ G2.9 - Dependency Review
  >   - Dados das vulnerabilidades dessas dependências. 
  > - A diferença entre o Review e o Bot, é que o Bot é automaticamente, e o Review é no PR.
 
+
 G2.10 - GraphQL Explorer 
  > - Ferramenta recomendada para se comunicar com o GraphQL API; 
  > - É um IDE interativo e gráfico, de GraphQL.   
@@ -369,6 +377,10 @@ G2.10 - GraphQL Explorer
 https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2
 
 
+G2.11 - CodeQL 
+ > 
+
+ 
 </br>
 </div>
 </details>
