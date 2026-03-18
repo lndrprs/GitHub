@@ -174,6 +174,31 @@ G2.3 - Code Scanning
  >   - Usa SAT (Static Analysis Techniques), para vulnerabilidades como SQL Injection, SSX e Buffer Overflows; 
  >   - Providencia feedback automatizado diretamente no fluxo de Pull Request;
  >   - Pode também detectar vulnerabilidades que já existem em Produção. 
+ >
+ > - Usa CodeQL para analisar o código no repositório;
+ > - Procura por vulnerabilidades de segurança, e erros no código. 
+ >   - Ativo em todos os repositórios públicos, e privados apenas se o GHAS está ativado;
+ >
+ > - Se o Code Scanning achar uma vulnerabilidade, avisa na aba de segurança;
+ >   - O alerta só é fechado depois que o código é arrumado. 
+ >
+ > - É possível agendar escaneamentos para determinados dias ou períodos;
+ >   - Sendo possível ativar também quando um evento ocorre no repositório, como um push. 
+ >
+ > - É gerado um banco de dados em CodeQL, que representa a base de códigos;
+ >   - Executa queries de CodeQL nesse banco de dados para identificar problemas.
+ >
+ > - Code Scanning usa o GitHub Actions, e cada execução consome minutos.
+ >
+ > - É possível escanear o código em outro lugar, e subir os resultados no GitHub;
+ >   - O arquivo para upload é o SARIF - Static Analysis Results Interchange Format;
+ >   - Os alertas são baseados no SARIF - e devem usar versão 2.1.0;
+ >   - Pode usar a API do Code Scanning, CodeQL CLI ou GitHub Actions para subir o código. 
+ >     - SARIF aceita o máximo de 5.000 resultados por upload;
+ >     - Acima desse limite, os registros são ignorados.
+ >     - Suporta o máximo de 10MB, para a compressão gzip. 
+ >       - Se tiver mais resultados ou o arquivo for mais pesado, focar nas regras e queries mais importantes. 
+
 
 G2.4 - Dependabot 
  > - Ferramenta de Gerenciamento Automatizado de Dependências;
@@ -341,8 +366,8 @@ G2.10 - GraphQL Explorer
  > - Ferramenta recomendada para se comunicar com o GraphQL API; 
  > - É um IDE interativo e gráfico, de GraphQL.   
 
+https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2
 
-https://learn.microsoft.com/en-us/training/modules/configure-code-scanning/
 
 </br>
 </div>
