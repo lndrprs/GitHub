@@ -378,9 +378,47 @@ https://learn.microsoft.com/en-us/training/paths/github-advanced-security-2
 
 
 G2.11 - CodeQL 
+ > - CodeQL trata o código como dados; 
+ > - Cria-se um banco de dados usando dados consultáveis, extraídos da base de código; 
+ > - Então, executa-se as queries de CodeQL nesse banco, identificando vulnerabilidades, bugs e outros erros. 
+ >
+ > - É possível usar o CodeQL CLI para analisar o código e gerar o banco de dados; 
+ > - Depois que o banco de dados está pronto, é possível consultar o banco de dados ou executar uma suite de queries;
+ >   - Assim, gera o conjunto de resultados em SARIF - Static Analysis Results Interchange Format. 
  > 
+ > - Diferença entre linguagens de programação:
+ >   - Compiladas: Diretório deve estar pronto para build, com as dependências instaladas; 
+ >     - Então, começa a extração de uma representação relacional única de cada arquivo fonte, para criar o banco. 
+ >
+ >   - Interpretadas: Extractor executa diretamente no código fonte;
+ >     - Essa capacidade dá uma representação acurada do código base, e resolve qualquer dependência. 
+ >
+ > - Extractor 
+ >   - Ferramenta que produz o dado relacional;
+ >   - Cada linguagem suporte apenas um extractor. 
+ >
+ > - Um banco de dados CodeQL é um diretório único que contém todos os datas requisitados para análise;
+ > - Banco de dados são gerados uma linguagem por vez, para fontes de código multi-linguagem; 
+ >   - Cada linguagem possui seu próprio schema de banco de dados. 
+ > - Banco de Dados CodeQL inclui duas tabelas principais:
+ >   - Expressions: Tabela que contem uma linha para cada expressão no código;
+ >   - Statements: Tabela que contém uma linha para cada statement no código. 
+ >
+ > - Existem dois tipos de Queries:
+ >   - Alert: Destaca problemas em locais específicos do código;
+ >   - Path: Descreve o fluxo de informação entre a origem e o destino do código. 
+ > - As queries possuem a extensão de arquivo .ql 
+ >
+ > - Queries possuem propriedades de metadados que indicam como os resultados devem ser interpretados; 
+ >   - Esses metadados de query podem ser usados para:
+ >     - Identificar queries customizadas, quando adicionadas no Repositório;
+ >     - Providenciam informação sobre o propósito da query. 
+ > - Informações de metadados podem incluir: 
+ >   - Descrição da Query;
+ >   - ID único;
+ >   - Tipo de problem (Alerta ou Path). 
+ > - Metadados também especificam como interpretar e exibir os resultados de query. 
 
- 
 </br>
 </div>
 </details>
